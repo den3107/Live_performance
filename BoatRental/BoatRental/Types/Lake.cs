@@ -7,38 +7,38 @@ using BoatRental.Repository;
 
 namespace BoatRental.Types
 {
-    class Motor
+    class Lake
     {
         public int ID { get; private set; }
         public String Name { get; private set; }
-        public double TankCapacity { get; private set; }
+        public double Price { get; private set; }
 
         private static DAL dal = new DAL(new OracleRepository());
 
-        public Motor(int id, String name, double tankCapacity)
+        public Lake(int id, String name, double price)
         {
             ID = id;
             Name = name;
-            TankCapacity = tankCapacity;
+            Price = price;
         }
 
         public void SetName(String name)
         {
-            dal.SetMotorName(name, ID);
+            dal.SetLakeName(name, ID);
 
             Name = name;
         }
 
-        public void SetTankCapacity(double tankCapacity)
+        public void SetPrice(double price)
         {
-            dal.SetMotorTankCapacity(tankCapacity, ID);
+            dal.SetLakePrice(price, ID);
 
-            TankCapacity = tankCapacity;
+            Price = price;
         }
 
-        public static List<Motor> GetAllMotors()
+        public static List<Lake> GetAllLakes()
         {
-            return dal.GetAllMotors();
+            return dal.GetAllLakes();
         }
     }
 }

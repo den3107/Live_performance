@@ -57,8 +57,14 @@
     <Compile Include="Repository\DAL.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\OracleRepository.cs" />
+    <Compile Include="Types\Boat.cs" />
+    <Compile Include="Types\CONFIG.cs" />
+    <Compile Include="Types\HireContract.cs" />
+    <Compile Include="Types\Item.cs" />
     <Compile Include="Types\Kind.cs" />
+    <Compile Include="Types\Lake.cs" />
     <Compile Include="Types\Motor.cs" />
+    <Compile Include="Types\User.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

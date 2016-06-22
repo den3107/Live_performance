@@ -9,65 +9,54 @@ namespace BoatRental.Types
 {
     class Kind
     {
+        public int ID { get; private set; }
         public String Name { get; private set; }
         public bool PaysForLock { get; private set; }
         public double Price { get; private set; }
         public String Type { get; private set; }
 
-        private DAL dal = new DAL(new OracleRepository());
+        private static DAL dal = new DAL(new OracleRepository());
 
-        public Kind(String name, bool paysForLock, double price, String type)
+        public Kind(int id, String name, bool paysForLock, double price, String type)
         {
+            ID = id;
             Name = name;
             PaysForLock = paysForLock;
             Price = price;
             Type = type;
         }
 
-        public bool SetName(String name)
+        public void SetName(String name)
         {
-            bool success = true;
-            int returnVal = 0;
-            try
-            {
-                returnVal = dal.SetName(name);
-            }
-            catch
-            {
-                success = false;
-            }
+            dal.SetKindName(name, ID);
 
-            if (returnVal > 0)
-            {
-                Name = name;
-            }
-            else
-            {
-                success = false;
-            }
-
-            return success;
+            Name = name;
         }
 
         public void SetPaysForLock(bool paysForLock)
         {
-            dal.SetPaysForLock(paysForLock);
+            dal.SetKindPaysForLock(paysForLock, ID);
 
             PaysForLock = paysForLock;
         }
 
         public void SetPrice(double price)
         {
-            dal.SetPrice(price);
+            dal.SetKindPrice(price, ID);
 
             Price = price;
         }
 
         public void SetType(String type)
         {
-            dal.SetType(type);
+            dal.SetKindType(type, ID);
 
             Type = type;
+        }
+
+        public static List<Kind> GetAllKinds()
+        {
+            return dal.GetAllKinds();
         }
     }
 }

@@ -36,6 +36,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="57ac35f5-1dff-4021-8878-3d363334d501">
+            <interfaceMoniker
+              Id="1d3e7cad-f260-4dfd-a6bf-c13a60978df9"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package_1343.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="aec2553b-484b-4f59-861f-c83c5741343c"

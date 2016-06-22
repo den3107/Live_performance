@@ -142,44 +142,6 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="2a72c5a1-15ab-449c-9f97-f73d1399f852"
-            name="SetName"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="5cc6740e-d369-4595-9263-e439a8282bc7"
-                  name="name"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0571aaeb-8d62-417b-9ad4-f9620eb21737"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="c5acfe50-b7ee-4633-a0dc-295f62a51406"
             name="SetKind"
             isLeaf="false"
@@ -276,6 +238,30 @@
                     <classMoniker
                       Id="97173f98-155f-40f4-b4ae-66b5fb248498"
                       LastKnownName="Motor"
+                      LastKnownLocation="Package_1346.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="66156bb1-e1a5-43f8-8136-cbebbb634aad"
+            name="GetAllBoats"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f585841-29af-410d-9c2f-c0faa4e52e1f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="2c975335-077d-4c89-921c-7126cb5684c2"
+                      LastKnownName="Boat[]"
                       LastKnownLocation="Package_1346.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -379,6 +365,24 @@
                 LastKnownLocation="Modelling_Project.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="c81fde84-e25c-4c30-be68-38333dfb1389"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Modelling_Project.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -392,7 +396,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e660e1ce-aa90-4328-bac1-bb07526af08c"
+                  Id="a6a6b684-3b19-43c6-8cc0-c08996b72b39"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -400,19 +404,6 @@
                     <primitiveTypeMoniker
                       Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                       LastKnownName="String"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="47293422-0842-4ec2-acfb-b3d05c089daf"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
                       LastKnownLocation="Modelling_Project.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -505,7 +496,21 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="baa4745b-7090-4016-921c-a20354189846"
+                  Id="f4938325-c743-4ee6-aa9b-e6cf16580c51"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="697a68b2-568e-404c-86e0-40277673697d"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -519,7 +524,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="121b563d-3ea3-428d-b595-f41267756d19"
+                  Id="352c74ab-3753-4231-ac56-7b3e971dc998"
                   name="paysForLock"
                   direction="In"
                   isUnique="false">
@@ -533,7 +538,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="d9e00a74-1088-4dc5-92fa-79fa5ad9e114"
+                  Id="d57f7b9a-5508-4607-ab16-dc7b6e5426b1"
                   name="price"
                   direction="In"
                   isUnique="false">
@@ -547,7 +552,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="108e0f97-e256-40ed-8b7c-6fe6a406523a"
+                  Id="abbc7769-6fa0-4e77-bbd1-cec50c7d1107"
                   name="type"
                   direction="In"
                   isUnique="false">
@@ -556,6 +561,30 @@
                       Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                       LastKnownName="String"
                       LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fb68af88-23e2-48f4-9695-0f33c2c3b0d5"
+            name="GetAllKinds"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e8765954-0a5f-435e-aaee-0537de749fe0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c0c17492-46d6-4efd-8e4a-566dc3d6aced"
+                      LastKnownName="Kind[]"
+                      LastKnownLocation="Package_1346.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -617,6 +646,24 @@
                 LastKnownLocation="Package_1346.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="47a45940-e312-436c-a948-0eed7cd93490"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Modelling_Project.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -630,7 +677,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="672d507b-6f16-4117-b4c0-3196fb938141"
+                  Id="d5e62773-d8ad-4fee-b565-2bfd2cab6e12"
                   name="string"
                   direction="In"
                   isUnique="false">
@@ -638,19 +685,6 @@
                     <primitiveTypeMoniker
                       Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                       LastKnownName="String"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="018c70c5-4ca1-49e4-b9c6-de5c0c172422"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
                       LastKnownLocation="Modelling_Project.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -693,7 +727,21 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ff9e550c-a144-4b9f-90fb-4603d1fdb6ef"
+                  Id="58bf52f6-b017-4e16-940c-bde3bab74a1d"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a4b9194d-5015-461b-85b8-8bac64b9b115"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -707,7 +755,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b3806808-694a-4683-a8f4-730064e972da"
+                  Id="173f240c-a954-4947-a1f1-b6ee8f9279a5"
                   name="tankCapacity"
                   direction="In"
                   isUnique="false">
@@ -715,6 +763,30 @@
                     <undefinedTypeMoniker
                       Id="69004a7a-6828-4582-aadd-6a90763ca283"
                       LastKnownName="Double"
+                      LastKnownLocation="Package_1346.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fbd99731-76bb-4f14-9aad-9815e70d1d4a"
+            name="GetAllMotors"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="369e97c7-4c3d-43da-8edc-e58b02af0c6f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3f945818-1809-4760-a3c8-c4c3a05d49d4"
+                      LastKnownName="Motor[]"
                       LastKnownLocation="Package_1346.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -782,6 +854,24 @@
                 LastKnownLocation="Package_1346.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="5b3f35c3-25ae-4824-b3ed-7d6aab3dbc11"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Modelling_Project.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -795,7 +885,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="0a2862d5-3da8-410c-88d5-49d41843dba8"
+                  Id="cf3977eb-16ae-47bb-a731-c05f9b1674a8"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -803,19 +893,6 @@
                     <primitiveTypeMoniker
                       Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                       LastKnownName="String"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="dee58390-51d7-475a-a06f-3aa2c4211668"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
                       LastKnownLocation="Modelling_Project.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -858,7 +935,21 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="19a6b8dc-b82f-4c12-a4b9-f8d0c6b6a22f"
+                  Id="ddcaeacc-dd03-486f-ba72-535a951acb2b"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0ad5e4ea-0ace-4b34-aa0b-bfcffa852dc1"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -872,7 +963,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="46acdfff-0c36-4c6f-be3f-33d78a9fd59f"
+                  Id="39f55872-dfc4-47f3-b935-987a95f98f0b"
                   name="price"
                   direction="In"
                   isUnique="false">
@@ -880,6 +971,30 @@
                     <undefinedTypeMoniker
                       Id="69004a7a-6828-4582-aadd-6a90763ca283"
                       LastKnownName="Double"
+                      LastKnownLocation="Package_1346.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ffb09a10-e262-46f4-bd32-b158e2adaf5c"
+            name="GetAllItems"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="37e185a8-7c5e-4ab5-90e4-b0a0f0c743dd"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3205d396-842e-4a11-9594-e823e5c29ad6"
+                      LastKnownName="Item[]"
                       LastKnownLocation="Package_1346.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1148,6 +1263,24 @@
                 LastKnownLocation="Package_1346.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="d024e509-0c34-4f11-b16a-e233496823bd"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Modelling_Project.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1199,7 +1332,21 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="573c8317-6bb1-43a3-bcf5-ccee0e70177e"
+                  Id="94d6c766-d896-4110-b516-79cdf672f0ed"
+                  name="id"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39d06f4a-43a3-451e-bf1a-5fe730d72f95"
                   name="hirer"
                   direction="In"
                   isUnique="false">
@@ -1213,7 +1360,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="2cbba60c-cb55-4b10-b619-a1327ab9f80b"
+                  Id="f33d1a4c-b9bf-4839-b74b-051c817b7b10"
                   name="boats"
                   direction="In"
                   isUnique="false">
@@ -1227,35 +1374,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="f6da7b8f-9a37-4f59-927a-dfdea9a9cd80"
-                  name="items"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="3205d396-842e-4a11-9594-e823e5c29ad6"
-                      LastKnownName="Item[]"
-                      LastKnownLocation="Package_1346.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fd851d3b-b060-4316-8aea-940171be361c"
-                  name="lakes"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="bdc8a5d1-552f-4fc7-95ff-280e92f8f604"
-                      LastKnownName="Lakes[]"
-                      LastKnownLocation="Package_1346.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f22e66b7-9069-4553-887b-3ecf21de6ecb"
+                  Id="799ce817-b0d8-4080-a20a-aff98a87124d"
                   name="frieschLakes"
                   direction="In"
                   isUnique="false">
@@ -1269,21 +1388,47 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="6f811aa5-3f42-491d-97bf-acea83723b6e"
+                  Id="c9a69f44-37e4-453e-af58-91ec44dff76e"
                   name="dateStart"
                   direction="In"
                   isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d0b2964e-b07c-4392-9ea2-4b07981e8f24"
+                      name="Lower"
+                      value=", items : Item[" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="483cd6f5-6720-4ded-ba27-2859dee87587"
+                      name="Upper"
+                      value=", items : Item[" />
+                  </upperValueInternal>
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="7c53e9ef-9b4f-4d71-b963-cc666586e210"
-                      LastKnownName="DateTime["
+                      Id="d327d8be-ee37-4d31-9545-5d7bff886072"
+                      LastKnownName="DateTime"
                       LastKnownLocation="Package_1346.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="3009f27a-4061-4c0b-89c6-38474b615dd7"
+                  Id="deb7aac8-0f10-4402-8556-1b065d1edb7a"
+                  name="lakes"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bdc8a5d1-552f-4fc7-95ff-280e92f8f604"
+                      LastKnownName="Lakes[]"
+                      LastKnownLocation="Package_1346.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2bc1c868-b8f3-49b2-bc85-5addae22b364"
                   name="dateEnd"
                   direction="In"
                   isUnique="false">
@@ -1388,6 +1533,24 @@
                 LastKnownLocation="Package_1346.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="368844a4-9bfe-43bf-9512-3b6413d259e6"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Modelling_Project.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1401,7 +1564,21 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="698942c6-fb39-466b-a114-0956fb7b0d0e"
+                  Id="eae03118-9a1e-4dd7-8954-6082c859078d"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ecea278-31b6-401b-a1ff-437d839b84d8"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -1415,7 +1592,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="376b8320-14dc-4fe6-8f9a-9c5934361949"
+                  Id="e783777c-abc4-4ecd-ae36-2269a77ebf39"
                   name="price Double"
                   direction="In"
                   isUnique="false" />
@@ -1433,7 +1610,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="231a7a28-81a8-4bf9-a453-02dc535ea589"
+                  Id="733d4e59-1f96-46ac-9624-6c62e9f2f2a1"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -1441,19 +1618,6 @@
                     <primitiveTypeMoniker
                       Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                       LastKnownName="String"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e78b3d2d-0976-4fbe-9a04-a8680ecd31c9"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
                       LastKnownLocation="Modelling_Project.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1479,6 +1643,30 @@
                     <undefinedTypeMoniker
                       Id="69004a7a-6828-4582-aadd-6a90763ca283"
                       LastKnownName="Double"
+                      LastKnownLocation="Package_1346.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c6198c66-44e7-4fa4-b7fe-78a6d4aa3633"
+            name="GetAllLakes"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6543c847-133e-4f7e-b8c5-16ba8fd8a0ec"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="98ed2e9b-c48d-40f6-ab34-bff4f8698e24"
+                      LastKnownName="Lake[]"
                       LastKnownLocation="Package_1346.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1706,6 +1894,58 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="12ceb9b2-2b6e-44a6-a692-6a7d743e61e5"
+            name="ValidateUser"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0c3a959-604a-463f-9bdf-51915a5a34ae"
+                  name="emailaddress"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3ea84a6d-c7b6-497c-9167-7c161bc6bca5"
+                  name="password"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modelling_Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a5b03da3-98ee-49b2-9569-4f1b8e598b52"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="873b8eb2-e792-4c4d-956e-f7cc692bf945"
+                      LastKnownName="User"
+                      LastKnownLocation="Package_1346.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1736,6 +1976,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="049cfe5e-b5ca-4dd9-8328-816e252c99ae">
+            <classMoniker
+              Id="84b11ec0-c75d-4c14-a552-5e327ff6dea1"
+              LastKnownName="DAL"
+              LastKnownLocation="Package_1343.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="01f10916-a4f2-4667-9ecf-8fb39826917c"
@@ -1915,71 +2164,37 @@
             Id="0258187e-2413-4061-b7bf-16e426f5f97f"
             name="CONFIG"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1735b98a-e4e4-4310-8162-406efd30af53"
-                  name="frieschLakePrice"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="69004a7a-6828-4582-aadd-6a90763ca283"
-                      LastKnownName="Double"
-                      LastKnownLocation="Package_1346.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="47788f9d-e2ab-423a-af5c-c8f482a7ab71"
-                  name="frieschLakes"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1d4a7e8a-1d81-44e9-9b1c-a00fb340297b"
-                  name="lockPrice"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="69004a7a-6828-4582-aadd-6a90763ca283"
-                      LastKnownName="Double"
-                      LastKnownLocation="Package_1346.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="8257047e-418b-419a-bb41-f026538e5c58"
-                  name="maxFrieschLakes"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="Modelling_Project.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c0c17492-46d6-4efd-8e4a-566dc3d6aced"
+        name="Kind[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3f945818-1809-4760-a3c8-c4c3a05d49d4"
+        name="Motor[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f13aea9d-1951-4abd-868f-b745de1c29ea"
+        name="Itemp[" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="87623767-83ef-43a2-bcb1-84ba8941e685"
+        name="Item[" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="98ed2e9b-c48d-40f6-ab34-bff4f8698e24"
+        name="Lake[]" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
