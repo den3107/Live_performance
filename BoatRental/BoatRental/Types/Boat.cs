@@ -7,7 +7,7 @@ using BoatRental.Repository;
 
 namespace BoatRental.Types
 {
-    class Boat
+    public class Boat
     {
         public String Name { get; private set; }
         public Kind Kind { get; private set; }
@@ -39,6 +39,11 @@ namespace BoatRental.Types
         public static List<Boat> GetAllBoats()
         {
             return dal.GetAllBoats();
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

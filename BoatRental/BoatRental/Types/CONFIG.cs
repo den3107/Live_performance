@@ -7,7 +7,7 @@ using BoatRental.Repository;
 
 namespace BoatRental.Types
 {
-    class CONFIG
+    public class CONFIG
     {
         public static double FrieschLakePrice { get; private set; }
         public static int FrieschLakes { get; private set; }

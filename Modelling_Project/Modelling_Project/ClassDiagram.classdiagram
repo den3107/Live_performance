@@ -217,12 +217,6 @@
                           <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
                         </type_NamedElement>
                       </property>
-                      <property Id="b36088e5-d5b5-46e3-af91-e89dd69aada7" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="b025e7ae-6f4e-4d3e-a9b8-8516a6e58e4f" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="630cef6b-cbd4-4f24-8823-2d2c6ddfa029" LastKnownName="Double" />
-                        </type_NamedElement>
-                      </property>
                       <property Id="fed459b2-5a83-4c89-beb5-b88f96fff7d0" name="PaysForLock" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="18f71578-d8fd-40e6-aa4d-b6bbab0bd5a6" />
                         <type_NamedElement>
@@ -299,40 +293,32 @@
                         <elementDefinition Id="1b3619de-3cde-42c3-ad0b-489f03733fa1" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="fa57ea34-1cb3-496f-bbf9-c2130c79bf07" name="ID" direction="In" isUnique="false">
-                              <elementDefinition Id="f4938325-c743-4ee6-aa9b-e6cf16580c51" />
+                            <parameter Id="97b52df4-fb11-452d-830f-c3435525d1ff" name="ID" direction="In" isUnique="false">
+                              <elementDefinition Id="7d6032dc-2dc6-46be-91e8-583a167349aa" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="726b40d0-871d-4e81-a63b-d1167dad9fd8" LastKnownName="Integer" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="4b9e6395-4eb6-4c17-8e10-dcf9e6bfbcf7" name="name" direction="In" isUnique="false">
-                              <elementDefinition Id="697a68b2-568e-404c-86e0-40277673697d" />
+                            <parameter Id="572d40a4-c88a-4fc9-9912-11f823ecc55b" name="name" direction="In" isUnique="false">
+                              <elementDefinition Id="fa715b51-8ad8-4ea3-b222-aaf132cee273" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="dc565dd4-d6cb-4cc2-afb7-a577b8336583" name="paysForLock" direction="In" isUnique="false">
-                              <elementDefinition Id="352c74ab-3753-4231-ac56-7b3e971dc998" />
-                              <type_NamedElement>
-                                <referencedTypeMoniker Id="2346df97-5aac-4786-95a3-d6f109aac9b6" LastKnownName="boolean" />
-                              </type_NamedElement>
-                            </parameter>
-                          </operationHasOwnedParameters>
-                          <operationHasOwnedParameters>
-                            <parameter Id="2aec0082-b4d4-46a2-a4f1-fb99e44a21f4" name="price" direction="In" isUnique="false">
-                              <elementDefinition Id="d57f7b9a-5508-4607-ab16-dc7b6e5426b1" />
+                            <parameter Id="64a8f4b1-d985-4671-9e01-90cb5394d3ee" name="paysForLock" direction="In" isUnique="false">
+                              <elementDefinition Id="64ac0779-ed33-4b6d-939b-45c1192750e3" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="630cef6b-cbd4-4f24-8823-2d2c6ddfa029" LastKnownName="Double" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="e93b80b3-de69-4d66-8cfb-f8662ed88382" name="type" direction="In" isUnique="false">
-                              <elementDefinition Id="abbc7769-6fa0-4e77-bbd1-cec50c7d1107" />
+                            <parameter Id="291b0d2c-5fa7-4caa-9235-f82d1940ef3b" name="type" direction="In" isUnique="false">
+                              <elementDefinition Id="50e143a3-e5f8-428a-8855-b67de18505d1" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
                               </type_NamedElement>
@@ -384,14 +370,26 @@
                           <referencedTypeMoniker Id="726b40d0-871d-4e81-a63b-d1167dad9fd8" LastKnownName="Integer" />
                         </type_NamedElement>
                       </property>
+                      <property Id="9cec1f5a-73ee-4ce2-b2af-7fd00ad5fe57" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="41012586-852d-40a7-8818-e335d81fcff5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="630cef6b-cbd4-4f24-8823-2d2c6ddfa029" LastKnownName="Double" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="8a84d783-4790-4617-a4b4-8723ddc21a0a" name="MayTraverseLakes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="de5fbee4-b06c-4cbc-ae1b-ba11996add52" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="c54970bb-888a-4937-9446-8e9383d5c1ca" LastKnownName="Boolean" />
+                        </type_NamedElement>
+                      </property>
                     </ownedAttributesInternal>
                     <ownedOperationsInternal>
                       <operation Id="12d6a338-4614-4429-90df-d6a46c4a0978" name="SetName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="1fed3293-585d-4bb1-8991-775a50d46325" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="a5b04e79-cabd-4b13-ac6a-e9636c966bda" name="string" direction="In" isUnique="false">
-                              <elementDefinition Id="d5e62773-d8ad-4fee-b565-2bfd2cab6e12" />
+                            <parameter Id="e861d240-e3a7-4b16-8ccd-f8d923901a92" name="name" direction="In" isUnique="false">
+                              <elementDefinition Id="336d5067-933a-4c86-8e10-401ceda830ec" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
                               </type_NamedElement>
@@ -416,26 +414,42 @@
                         <elementDefinition Id="a677f883-3939-4af4-b80a-5658c924320f" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="51646524-141a-4125-a580-cc71644cc8eb" name="ID" direction="In" isUnique="false">
-                              <elementDefinition Id="58bf52f6-b017-4e16-940c-bde3bab74a1d" />
+                            <parameter Id="981163dd-4d6f-405c-96dc-057aa5fbc456" name="ID" direction="In" isUnique="false">
+                              <elementDefinition Id="063454f5-0f33-46e3-bac4-577ecc979348" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="726b40d0-871d-4e81-a63b-d1167dad9fd8" LastKnownName="Integer" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="af88b952-36f1-4a68-a0a2-188952d0015e" name="name" direction="In" isUnique="false">
-                              <elementDefinition Id="a4b9194d-5015-461b-85b8-8bac64b9b115" />
+                            <parameter Id="e3935f90-a828-438c-a889-34c840daa91b" name="name" direction="In" isUnique="false">
+                              <elementDefinition Id="15f331d6-e7ad-4e85-8901-c27501c77c28" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="5dd2bc3f-288d-4664-b78e-3d880e6514df" name="tankCapacity" direction="In" isUnique="false">
-                              <elementDefinition Id="173f240c-a954-4947-a1f1-b6ee8f9279a5" />
+                            <parameter Id="653cf18f-90db-4720-9468-5c76abf424d9" name="tankCapacity" direction="In" isUnique="false">
+                              <elementDefinition Id="e2e176ec-c3be-4945-96b0-ce340f21c2fe" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="630cef6b-cbd4-4f24-8823-2d2c6ddfa029" LastKnownName="Double" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="75c11f1e-a806-4fe7-a612-374e33c247ab" name="price" direction="In" isUnique="false">
+                              <elementDefinition Id="a5cbd302-0def-485a-b79b-12dd64a84471" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="630cef6b-cbd4-4f24-8823-2d2c6ddfa029" LastKnownName="Double" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="f24bfab9-7a1b-42db-b0b0-a3d47695ec7d" name="MayTraverseLakes" direction="In" isUnique="false">
+                              <elementDefinition Id="67235d3d-1149-4301-9c3b-326af9e00876" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="c54970bb-888a-4937-9446-8e9383d5c1ca" LastKnownName="Boolean" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
@@ -449,6 +463,32 @@
                               <elementDefinition Id="369e97c7-4c3d-43da-8edc-e58b02af0c6f" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="ff277a22-5edf-44dc-92d9-23e0a6e522b0" LastKnownName="Motor[]" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="15d20a63-ebf1-4829-b46b-7817321409f3" name="SetPrice" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="2e7f2724-99a2-47bb-8516-3bcbc28701af" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="14663749-1a94-4386-b75f-2fa134197323" name="price" direction="In" isUnique="false">
+                              <elementDefinition Id="27206bc9-1f3f-4adb-bc27-c373b2a7f161" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="630cef6b-cbd4-4f24-8823-2d2c6ddfa029" LastKnownName="Double" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="7e74c581-206d-4fff-a14b-1f4d42dfb606" name="SetMayTraverseLakes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="fcdff332-95e7-4096-a164-6a7cfd2e79b9" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="66fb0fd3-b36b-44f9-875f-2754a1230678" name="mayTraverseLakes" direction="In" isUnique="false">
+                              <elementDefinition Id="c381f70f-2fa0-4d92-b6d9-8534da899e0c" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="c54970bb-888a-4937-9446-8e9383d5c1ca" LastKnownName="Boolean" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
@@ -702,95 +742,80 @@
                           <referencedTypeMoniker Id="726b40d0-871d-4e81-a63b-d1167dad9fd8" LastKnownName="Integer" />
                         </type_NamedElement>
                       </property>
+                      <property Id="9e189318-3703-427d-a2ba-6fa0f93f3ecf" name="HirerEmailaddress" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="b7598b24-28e4-4fd4-bf59-32c56973245c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
+                        </type_NamedElement>
+                      </property>
                     </ownedAttributesInternal>
                     <ownedOperationsInternal>
-                      <operation Id="0be9fe1d-ae9b-46da-8e6e-940ae51bae0c" name="AddDateEnd" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                        <elementDefinition Id="b45cde7f-e7a1-4eb8-872b-dc44ca9174a7" />
-                        <ownedParameters>
-                          <operationHasOwnedParameters>
-                            <parameter Id="d87b7208-a958-482e-8f82-665a69eb553e" direction="Return" isUnique="false">
-                              <elementDefinition Id="7cd0f2df-02ae-4631-9b14-4d1a34b35b0e" />
-                              <type_NamedElement>
-                                <referencedTypeMoniker Id="c54970bb-888a-4937-9446-8e9383d5c1ca" LastKnownName="Boolean" />
-                              </type_NamedElement>
-                            </parameter>
-                          </operationHasOwnedParameters>
-                          <operationHasOwnedParameters>
-                            <parameter Id="c431e82a-12e7-40a0-8157-d427d707e74f" name="date" direction="In" isUnique="false">
-                              <elementDefinition Id="a0cba980-6466-464e-9b3a-06c17774cd92" />
-                              <type_NamedElement>
-                                <referencedTypeMoniker Id="7a2c71cc-b22c-474e-98af-8370136e80f2" LastKnownName="DateTime" />
-                              </type_NamedElement>
-                            </parameter>
-                          </operationHasOwnedParameters>
-                        </ownedParameters>
-                      </operation>
                       <operation Id="9e3ab955-5dc4-4ee5-af05-de4d72b38c3a" name="HireContract" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="794788c3-e55c-439f-a0e9-497170d9a8ac" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="54736640-bf17-4f5f-a674-b25adbeed560" name="id" direction="In" isUnique="false">
-                              <elementDefinition Id="94d6c766-d896-4110-b516-79cdf672f0ed" />
+                            <parameter Id="0a906d5e-7741-47dd-9292-f5d61d9a2558" name="id" direction="In" isUnique="false">
+                              <elementDefinition Id="3f39a060-fb03-4f97-8d19-bcee0a6b53f1" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="726b40d0-871d-4e81-a63b-d1167dad9fd8" LastKnownName="Integer" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="bfe7fab4-12c0-4a78-971d-4c96e6df26e3" name="hirer" direction="In" isUnique="false">
-                              <elementDefinition Id="39d06f4a-43a3-451e-bf1a-5fe730d72f95" />
+                            <parameter Id="949f9718-b7a8-402a-a9cb-8bd6ffb08ea8" name="hirerEmailaddress" direction="In" isUnique="false">
+                              <elementDefinition Id="952a0c23-9a0d-405b-80a8-4cdda48a950f" />
                               <type_NamedElement>
-                                <referencedTypeMoniker Id="21cd0f9a-1eb9-418c-ad2d-c491fafa38d1" LastKnownName="User" />
+                                <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="36ce433b-0255-4cdd-a579-637ce5218d0a" name="boats" direction="In" isUnique="false">
-                              <elementDefinition Id="f33d1a4c-b9bf-4839-b74b-051c817b7b10" />
+                            <parameter Id="8c390c53-df91-43e5-83c0-08b9d709eca1" name="boats" direction="In" isUnique="false">
+                              <elementDefinition Id="f0ffc7f3-23aa-4c7d-bd8f-bab7c2e9e012" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="4371afff-2851-498e-a0ca-79036bf735dd" LastKnownName="Boat[]" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="04b7f6df-dff9-4497-b73e-a280429d7f5b" name="frieschLakes" direction="In" isUnique="false">
-                              <elementDefinition Id="799ce817-b0d8-4080-a20a-aff98a87124d" />
+                            <parameter Id="b8a670e1-4db2-4151-803c-bc95d4041661" name="frieschLakes" direction="In" isUnique="false">
+                              <elementDefinition Id="304a5d27-c10a-40ce-b029-687f0fe2931e" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="726b40d0-871d-4e81-a63b-d1167dad9fd8" LastKnownName="Integer" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="40e15078-0ea8-4ff0-8618-b1f5d3afe797" name="dateStart" direction="In" isUnique="false">
-                              <lowerValueInternal>
-                                <literalString Id="9090f0fd-ddaa-4c97-a0f3-b84013a70060" name="Lower" value=", items : Item[">
-                                  <elementDefinition Id="d0b2964e-b07c-4392-9ea2-4b07981e8f24" />
-                                </literalString>
-                              </lowerValueInternal>
-                              <upperValueInternal>
-                                <literalString Id="c28644cc-2f47-4429-8b43-1ef6b030cb17" name="Upper" value=", items : Item[">
-                                  <elementDefinition Id="483cd6f5-6720-4ded-ba27-2859dee87587" />
-                                </literalString>
-                              </upperValueInternal>
-                              <elementDefinition Id="c9a69f44-37e4-453e-af58-91ec44dff76e" />
+                            <parameter Id="1bd36570-8a59-45c1-94b7-a257f4e943ab" name="dateStart" direction="In" isUnique="false">
+                              <elementDefinition Id="0ba0e8b9-ec5c-4ed2-95d9-8a59bb8deb3e" />
                               <type_NamedElement>
                                 <referencedTypeMoniker Id="7a2c71cc-b22c-474e-98af-8370136e80f2" LastKnownName="DateTime" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="b1fd1768-0288-4408-b95d-ca000d9f7a14" name="lakes" direction="In" isUnique="false">
-                              <elementDefinition Id="deb7aac8-0f10-4402-8556-1b065d1edb7a" />
+                            <parameter Id="61e97853-2f1d-48a3-ab0c-7b1440a64761" name="dateEnd" direction="In" isUnique="false">
+                              <lowerValueInternal>
+                                <literalString Id="030fa63c-6665-4999-bb44-6b51d4b16de9" name="Lower" value=", items : Item[">
+                                  <elementDefinition Id="41bdff76-4efb-491a-9f73-334a6cce057f" />
+                                </literalString>
+                              </lowerValueInternal>
+                              <upperValueInternal>
+                                <literalString Id="c1aed554-4969-4bcf-a664-1ebc53553bfe" name="Upper" value=", items : Item[">
+                                  <elementDefinition Id="098b772c-15cb-4bbf-89db-655e1abef2cc" />
+                                </literalString>
+                              </upperValueInternal>
+                              <elementDefinition Id="9e79aadf-0a9c-4cd5-990d-4f267179b8b1" />
                               <type_NamedElement>
-                                <referencedTypeMoniker Id="b9467b60-7b5c-487e-acd3-74340bc266da" LastKnownName="Lakes[]" />
+                                <referencedTypeMoniker Id="7a2c71cc-b22c-474e-98af-8370136e80f2" LastKnownName="DateTime" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="ca2a85ee-d69e-4ccb-906c-63d687eeba1f" name="dateEnd" direction="In" isUnique="false">
-                              <elementDefinition Id="2bc1c868-b8f3-49b2-bc85-5addae22b364" />
+                            <parameter Id="08f504a2-c02a-46f6-98d5-ad78635a09df" name="lakes" direction="In" isUnique="false">
+                              <elementDefinition Id="63f80897-2e3c-4a7e-937b-5d39c85d1147" />
                               <type_NamedElement>
-                                <referencedTypeMoniker Id="8c3accb5-053b-4899-95bf-7d397af77104" LastKnownName="DateTime]" />
+                                <referencedTypeMoniker Id="d3e48ead-6f75-4a17-8e32-49ae11088ed8" LastKnownName="Lakes[]]" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
@@ -907,11 +932,21 @@
                       </dependency>
                     </suppliersInternal>
                     <targetEnds>
-                      <association Id="3eb17b72-aadb-46a0-b864-bbdb15c1e778" isDerived="false" sourceEndRoleName="Hirer" targetEndRoleName="HireContracts" isLeaf="false" isAbstract="false">
+                      <association Id="3eb17b72-aadb-46a0-b864-bbdb15c1e778" isDerived="false" sourceEndRoleName="" targetEndRoleName="HireContracts" isLeaf="false" isAbstract="false">
                         <classMoniker Id="41150700-aa2f-412b-b683-8db48b8fc12e" LastKnownName="HireContract" />
                         <relationshipOwnedElementsInternal>
                           <associationHasOwnedEnds>
-                            <memberEnd Id="cab5eb1a-63b9-45ca-837d-638a8dbf4799" name="Hirer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                            <memberEnd Id="cab5eb1a-63b9-45ca-837d-638a8dbf4799" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <lowerValueInternal>
+                                <literalString Id="4d7c9095-1776-4107-98e1-d65aeb4beab0" name="Lower">
+                                  <elementDefinition Id="c3c314f6-a093-4a7f-9d8e-a2a647099014" />
+                                </literalString>
+                              </lowerValueInternal>
+                              <upperValueInternal>
+                                <literalString Id="455a217a-0f1e-4af2-829d-0edbfdb7009d" name="Upper">
+                                  <elementDefinition Id="9eb7dd29-b12c-4842-98ab-7993084397b2" />
+                                </literalString>
+                              </upperValueInternal>
                               <elementDefinition Id="08e4d595-54f7-459e-a677-3ee50f7069fd" />
                             </memberEnd>
                           </associationHasOwnedEnds>
@@ -959,10 +994,50 @@
                         <elementDefinition Id="737f74f9-9ada-4a88-839d-97cb6fb001e4" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
-                            <parameter Id="c253db62-eede-40fa-adbd-edd5a9dc2212" name="hireContract" direction="In" isUnique="false">
-                              <elementDefinition Id="39574ce3-dc2c-4a47-9913-5c9c4d2e21a6" />
+                            <parameter Id="c41bd6d8-1c46-411d-a5f6-18f430352501" name="friescheLakes" direction="In" isUnique="false">
+                              <elementDefinition Id="29c9e63c-b6ad-48b7-9684-711c2039864f" />
                               <type_NamedElement>
-                                <referencedTypeMoniker Id="d102ab94-eed8-42c0-ba6b-8167e80902cf" LastKnownName="HireContract" />
+                                <referencedTypeMoniker Id="726b40d0-871d-4e81-a63b-d1167dad9fd8" LastKnownName="Integer" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="88f907b3-5c2e-4dd5-a5e4-b4c107ae7ec6" name="dateStart" direction="In" isUnique="false">
+                              <elementDefinition Id="47dd53be-3129-44aa-ad09-3bbf5bde5c4e" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="7a2c71cc-b22c-474e-98af-8370136e80f2" LastKnownName="DateTime" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="13fc3308-ae97-4275-a77b-69223068211c" name="dateEnd" direction="In" isUnique="false">
+                              <elementDefinition Id="33500e1b-2596-4744-8efd-51d7197913fd" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="7a2c71cc-b22c-474e-98af-8370136e80f2" LastKnownName="DateTime" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="ff21f987-4701-4155-98ed-7ee1b2dc3fec" name="boats" direction="In" isUnique="false">
+                              <elementDefinition Id="976733bf-f0c0-4d37-9c69-0ea481e5860b" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="4371afff-2851-498e-a0ca-79036bf735dd" LastKnownName="Boat[]" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="d8fddea6-351f-4dfa-b4e5-e1ecde6029e5" name="items" direction="In" isUnique="false">
+                              <elementDefinition Id="30cabd5a-e020-4b25-828d-4252072ae634" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="60c653f4-1809-47e3-b2da-212aff73a867" LastKnownName="Item[]" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="f9512146-2607-48ab-83c1-5babe98370c7" name="lakes" direction="In" isUnique="false">
+                              <elementDefinition Id="3c789636-c4a1-47a2-85d2-7b93482680b4" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="dd37cb37-1186-4245-89e9-33763a436dd5" LastKnownName="Lake[]" />
                               </type_NamedElement>
                             </parameter>
                           </operationHasOwnedParameters>
@@ -1134,6 +1209,56 @@
               </packagedElements>
             </package>
           </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="4666c243-41fc-4594-80cf-5de026b341ea" name="Exceptions">
+              <elementDefinition Id="3a7daf9d-6064-4064-907b-5dfb5f6e8b5d" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="42e53ed4-c820-459d-865a-2c47e72c193f" name="LoginFailedException" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="bc9feb21-951c-448c-a971-dc0ef591532f" />
+                    <ownedOperationsInternal>
+                      <operation Id="27fc5c27-96a6-4c19-8687-ca9a225f0aa0" name="LoginFailedException" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="293b5324-cdab-4c73-bd53-043e8eed9699" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="991c5f51-20e9-4b55-9026-ad24ac92bc62" name="MakeContractException" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="03556844-f9fa-437c-8f2e-96fb06df5ff1" />
+                    <ownedOperationsInternal>
+                      <operation Id="86cbe0de-0072-42a9-91f1-903016ee045b" name="MakeContractException" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="250d0151-edc3-41ae-b176-d1169e62bf98" />
+                      </operation>
+                      <operation Id="fa6a747f-a260-4d78-bd2f-25a0c9154524" name="MakeContractException" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="e913d698-5a54-45ff-94ba-c5cbc4e1a3f9" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="83fb3ad8-304b-4e09-9b32-e54c6999a822" name="message" direction="In" isUnique="false">
+                              <elementDefinition Id="5c5e9418-92ef-4aa4-b50a-400a44fc85e7" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="bf1bfe29-d5e6-4d3f-8c78-f232d4cfcd3a" LastKnownName="String" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="b3e97a1c-53ae-4f9f-aa96-773caa78c236" name="InsufficientBudget" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="965f59f3-a197-47f1-a7e8-1c835b12038c" />
+                    <ownedOperationsInternal>
+                      <operation Id="74c5a1c2-8896-4e16-8917-38b876d81b0f" name="InsufficientBudget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="e82497ea-a918-4784-9242-0d0931907178" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
@@ -1163,11 +1288,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="2346df97-5aac-4786-95a3-d6f109aac9b6" name="boolean" isAbstract="false" isLeaf="false" cachedFullName="boolean">
-        <elementDefinition Id="d4fc9c60-b638-4f30-b63d-35af9d7b9e64" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="e002ae83-9ba8-48d3-b088-4a9c9bb33181" name="Kind" isAbstract="false" isLeaf="false" cachedFullName="Modelling_Project::BoatRental::Types::Kind">
         <elementDefinition Id="29bb42c5-183c-46b0-b393-cd8e1ec57cf7" />
       </referencedType>
@@ -1193,23 +1313,8 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="b9467b60-7b5c-487e-acd3-74340bc266da" name="Lakes[]" isAbstract="false" isLeaf="false" cachedFullName="Lakes[]">
-        <elementDefinition Id="bdc8a5d1-552f-4fc7-95ff-280e92f8f604" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="d102ab94-eed8-42c0-ba6b-8167e80902cf" name="HireContract" isAbstract="false" isLeaf="false" cachedFullName="Modelling_Project::BoatRental::Types::HireContract">
-        <elementDefinition Id="30a4d106-f959-4beb-88e4-348d64ece568" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="21cd0f9a-1eb9-418c-ad2d-c491fafa38d1" name="User" isAbstract="false" isLeaf="false" cachedFullName="Modelling_Project::BoatRental::Types::User">
         <elementDefinition Id="873b8eb2-e792-4c4d-956e-f7cc692bf945" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="8c3accb5-053b-4899-95bf-7d397af77104" name="DateTime]" isAbstract="false" isLeaf="false" cachedFullName="DateTime]">
-        <elementDefinition Id="695799e3-f75e-49fa-b379-a555736e4241" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1240,6 +1345,11 @@
     <packageHasNamedElement>
       <referencedType Id="dd37cb37-1186-4245-89e9-33763a436dd5" name="Lake[]" isAbstract="false" isLeaf="false" cachedFullName="Lake[]">
         <elementDefinition Id="98ed2e9b-c48d-40f6-ab34-bff4f8698e24" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d3e48ead-6f75-4a17-8e32-49ae11088ed8" name="Lakes[]]" isAbstract="false" isLeaf="false" cachedFullName="Lakes[]]">
+        <elementDefinition Id="259950f2-d109-4ff1-b49b-f5d979bc4708" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

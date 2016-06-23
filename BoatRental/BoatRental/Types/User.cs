@@ -7,7 +7,7 @@ using BoatRental.Repository;
 
 namespace BoatRental.Types
 {
-    class User
+    public class User
     {
         public String Emailaddress { get; private set; }
         public String Name { get; private set; }
@@ -24,9 +24,9 @@ namespace BoatRental.Types
             HireContracts = hireContracts ?? new List<HireContract>();
         }
 
-        public void AddHireContract(HireContract hireContract)
+        public void AddHireContract(int friescheLakes, DateTime dateStart, DateTime dateEnd, List<Boat> boats, List<Item> items = null, List<Lake> lakes = null)
         {
-            dal.AddUserHireContract(hireContract, Emailaddress);
+            HireContract hireContract = dal.AddUserHireContract(friescheLakes, dateStart, dateEnd, boats, Emailaddress, items, lakes);
 
             HireContracts.Add(hireContract);
         }

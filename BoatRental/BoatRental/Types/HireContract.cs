@@ -7,7 +7,7 @@ using BoatRental.Repository;
 
 namespace BoatRental.Types
 {
-    class HireContract
+    public class HireContract
     {
         public int ID { get; private set; }
         public DateTime DateStart { get; private set; }
@@ -16,14 +16,14 @@ namespace BoatRental.Types
         public List<Boat> Boats { get; private set; }
         public List<Item> Items { get; private set; }
         public List<Lake> Lakes { get; private set; }
-        public User Hirer { get; private set; }
+        public String HirerEmailaddress { get; private set; }
 
         private static DAL dal = new DAL(new OracleRepository());
 
-        public HireContract(int id, User hirer, List<Boat> boats, int frieschLakes, DateTime dateStart, DateTime dateEnd = default(DateTime), List<Item> items = null, List<Lake> lakes = null)
+        public HireContract(int id, String hirerEmailaddress, List<Boat> boats, int frieschLakes, DateTime dateStart, DateTime dateEnd, List<Item> items = null, List<Lake> lakes = null)
         {
             ID = id;
-            Hirer = hirer;
+            HirerEmailaddress = hirerEmailaddress;
             Boats = boats;
             FrieschLakes = frieschLakes;
             DateStart = dateStart;
@@ -32,11 +32,9 @@ namespace BoatRental.Types
             Lakes = lakes ?? new List<Lake>();
         }
 
-        public void AddDateEnd(DateTime date)
+        public override string ToString()
         {
-            dal.AddHireContractDateEnd(date, ID);
-
-            DateEnd = date;
+            return DateStart.ToString("yyyy/MM/dd") + " - " + DateEnd.ToString("yyyy/MM/dd");
         }
     }
 }

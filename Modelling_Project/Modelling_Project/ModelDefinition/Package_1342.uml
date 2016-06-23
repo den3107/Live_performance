@@ -16,5 +16,11 @@
         LastKnownName="Types"
         LastKnownLocation="Package_1346.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3a7daf9d-6064-4064-907b-5dfb5f6e8b5d"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_1312.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

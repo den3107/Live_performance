@@ -7,7 +7,7 @@ using BoatRental.Types;
 
 namespace BoatRental.Repository
 {
-    class DAL
+    public class DAL
     {
         private IRepository repository;
         
@@ -19,141 +19,142 @@ namespace BoatRental.Repository
         #region Kind type queries
         public int SetKindName(String name, int ID)
         {
-            return 0;
+            return repository.SetKindName(name, ID);
         }
 
         public int SetKindPaysForLock(bool paysForLock, int ID)
         {
-            return 0;
-        }
-
-        public int SetKindPrice(double price, int ID)
-        {
-            return 0;
+            return repository.SetKindPaysForLock(paysForLock, ID);
         }
 
         public int SetKindType(String type, int ID)
         {
-            return 0;
+            return repository.SetKindType(type, ID);
         }
 
         public List<Kind> GetAllKinds()
         {
-            return new List<Kind>();
+            return repository.GetAllKinds();
         }
         #endregion
 
         #region Motor type queries
         public int SetMotorName(String name, int ID)
         {
-            return 0;
+            return repository.SetMotorName(name, ID);
         }
 
         public int SetMotorTankCapacity(double tankCapacity, int ID)
         {
-            return 0;
+            return repository.SetMotorTankCapacity(tankCapacity, ID);
+        }
+
+        public int SetMotorPrice(double price, int ID)
+        {
+            return repository.SetMotorPrice(price, ID);
+        }
+
+        public int SetMotorMayTraverseLakes(bool mayTraverseLakes, int ID)
+        {
+            return repository.SetMotorMayTraverseLakes(mayTraverseLakes, ID);
         }
 
         public List<Motor> GetAllMotors()
         {
-            return new List<Motor>();
+            return repository.GetAllMotors();
         }
         #endregion
 
         #region Boat type queries
         public int SetBoatKind(Kind kind, String name)
         {
-            return 0;
+            return repository.SetBoatKind(kind, name);
         }
 
         public int SetBoatMotor(Motor motor, String name)
         {
-            return 0;
+            return repository.SetBoatMotor(motor, name);
         }
 
         public List<Boat> GetAllBoats()
         {
-            return new List<Boat>();
+            return repository.GetAllBoats();
         }
         #endregion
 
         #region Item type queries
         public int SetItemName(String name, int ID)
         {
-            return 0;
+            return repository.SetItemName(name, ID);
         }
 
         public int SetItemPrice(double price, int ID)
         {
-            return 0;
+            return repository.SetItemPrice(price, ID);
         }
 
         public List<Item> GetAllItems()
         {
-            return new List<Item>();
+            return repository.GetAllItems();
         }
         #endregion
 
         #region Lake type queries
         public int SetLakeName(String name, int ID)
         {
-            return 0;
+            return repository.SetLakeName(name, ID);
         }
 
         public int SetLakePrice(double price, int ID)
         {
-            return 0;
+            return repository.SetLakePrice(price, ID);
         }
 
         public List<Lake> GetAllLakes()
         {
-            return new List<Lake>();
+            return repository.GetAllLakes();
         }
         #endregion
 
         #region HireContract type queries
-        public int AddHireContractDateEnd(DateTime date, int id)
-        {
-            return 0;
-        }
         #endregion
 
         #region User type queries
-        public int AddUserHireContract(HireContract hireContract, String emailaddress)
+        public HireContract AddUserHireContract(int friescheLakes, DateTime dateStart, DateTime dateEnd, List<Boat> boats, String hirerEmailaddress, List<Item> items = null, List<Lake> lakes = null)
         {
-            return 0;
+            return repository.AddUserHireContract(friescheLakes, dateStart, dateEnd, boats, hirerEmailaddress, items, lakes);
         }
 
         public User ValidateUser(String emailaddress, String password)
         {
-            return new User("dummy", "dummy", true);
+            return repository.ValidateUser(emailaddress, password);
         }
         #endregion
 
         #region CONFIG type queries
         public Dictionary<String, object> GetCONFIG()
         {
-            return new Dictionary<string, object>();
+            return repository.GetCONFIG();
         }
 
         public int SetCONFIGFrieschLakePrice(double frieschLakePrice)
         {
-            return 0;
+            return repository.SetCONFIGFrieschLakePrice(frieschLakePrice);
         }
 
         public int SetCONFIGFrieschLakes(int frieschLakes)
         {
-            return 0;
+            return repository.SetCONFIGFrieschLakes(frieschLakes);
         }
 
         public int SetCONFIGLockPrice(double lockPrice)
         {
-            return 0;
+            return repository.SetCONFIGLockPrice(lockPrice);
         }
 
         public int SetCONFIGMaxFrieschLakes(int maxFrieschLakes)
         {
-            return 0;
+            return repository.SetCONFIGMaxFrieschLakes(maxFrieschLakes);
         }
         #endregion
     }

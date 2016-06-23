@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>E:\Data\Google Drive\Plof Party\Libraries\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,11 +49,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BudgetHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BudgetHelper.Designer.cs">
+      <DependentUpon>BudgetHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exceptions\InsufficientBudget.cs" />
+    <Compile Include="Exceptions\MakeContractException.cs" />
+    <Compile Include="Exceptions\LoginFailedException.cs" />
+    <Compile Include="ExportController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeContract.Designer.cs">
+      <DependentUpon>MakeContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +90,19 @@
     <Compile Include="Types\Lake.cs" />
     <Compile Include="Types\Motor.cs" />
     <Compile Include="Types\User.cs" />
+    <EmbeddedResource Include="BudgetHelper.resx">
+      <DependentUpon>BudgetHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeContract.resx">
+      <DependentUpon>MakeContract.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

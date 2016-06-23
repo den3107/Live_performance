@@ -7,22 +7,20 @@ using BoatRental.Repository;
 
 namespace BoatRental.Types
 {
-    class Kind
+    public class Kind
     {
         public int ID { get; private set; }
         public String Name { get; private set; }
         public bool PaysForLock { get; private set; }
-        public double Price { get; private set; }
         public String Type { get; private set; }
 
         private static DAL dal = new DAL(new OracleRepository());
 
-        public Kind(int id, String name, bool paysForLock, double price, String type)
+        public Kind(int id, String name, bool paysForLock, String type)
         {
             ID = id;
             Name = name;
             PaysForLock = paysForLock;
-            Price = price;
             Type = type;
         }
 
@@ -40,13 +38,6 @@ namespace BoatRental.Types
             PaysForLock = paysForLock;
         }
 
-        public void SetPrice(double price)
-        {
-            dal.SetKindPrice(price, ID);
-
-            Price = price;
-        }
-
         public void SetType(String type)
         {
             dal.SetKindType(type, ID);
@@ -57,6 +48,10 @@ namespace BoatRental.Types
         public static List<Kind> GetAllKinds()
         {
             return dal.GetAllKinds();
+        }
+        public override string ToString()
+        {
+            return "[" + ID + "] " + Name;
         }
     }
 }
